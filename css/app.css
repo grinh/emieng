@@ -60,6 +60,96 @@ html, body {
     word-break: break-word;
 }
 
-.test-progress {
-    margin-bottom: 1rem;
+/* MudLayout — treść poniżej stałego paska (nie zasłaniać licznika) */
+.mud-layout .mud-main-content {
+    padding-top: calc(var(--mud-appbar-height, 64px) + 12px) !important;
+}
+
+.page-content {
+    display: block;
+    width: 100%;
+}
+
+/* Pasek postępu testu */
+.test-progress-card {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 1.25rem;
+    padding: 1rem 1.25rem 1.125rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.test-progress-card--embedded {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.test-run-card {
+    display: block;
+    overflow: hidden;
+}
+
+.test-run-card-body {
+    display: block;
+}
+
+.test-progress-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    margin: 0 0 0.75rem;
+}
+
+.test-progress-heading {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.4;
+    flex: 1 1 12rem;
+}
+
+.test-progress-badge {
+    display: inline-block;
+    flex: 0 0 auto;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #fff;
+    background: #594ae2;
+    border-radius: 16px;
+    white-space: nowrap;
+}
+
+.test-progress-meta {
+    margin: 0 0 0.875rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.test-progress-bar {
+    display: block;
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+.test-progress-bar-fill {
+    display: block;
+    height: 100%;
+    background: #594ae2;
+    border-radius: 4px;
+    transition: width 0.2s ease;
 }
