@@ -8,13 +8,16 @@
     <base id="app-base" href="/" />
     <script>
         (function () {
-            var path = location.pathname.toLowerCase();
-            if (path === '/emieng' || path.indexOf('/emieng/') === 0) {
-                document.getElementById('app-base').setAttribute('href', '/emieng/');
+            var path = location.pathname;
+            var lower = path.toLowerCase();
+            var base = '/';
+            if (lower === '/emieng' || lower.indexOf('/emieng/') === 0) {
+                base = '/emieng/';
             }
+            document.getElementById('app-base').setAttribute('href', base);
         })();
     </script>
-    <link href="_framework/dotnet.mo50hwqxsa.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-xi1axGfXmNMko9l2Z0OjYuyXKe7QjiKd6NHAaXAUOkY=" />
+    <link href="_framework/dotnet.g5ivei6a6w.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-pKOLrq/NPhd4WWG3JXS1yQgBPva5CJ39biGB1wdL5oU=" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/app.css" />
@@ -23,7 +26,7 @@
     <script type="importmap">{
   "imports": {
     "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.66stpp682q.js",
-    "./_framework/dotnet.js": "./_framework/dotnet.mo50hwqxsa.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.g5ivei6a6w.js",
     "./_framework/dotnet.native.js": "./_framework/dotnet.native.rjbmzc4jpg.js",
     "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.r2kbxkuujc.js"
   },
@@ -31,8 +34,8 @@
   "integrity": {
     "./_framework/blazor.webassembly.66stpp682q.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
     "./_framework/blazor.webassembly.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
-    "./_framework/dotnet.js": "sha256-xi1axGfXmNMko9l2Z0OjYuyXKe7QjiKd6NHAaXAUOkY=",
-    "./_framework/dotnet.mo50hwqxsa.js": "sha256-xi1axGfXmNMko9l2Z0OjYuyXKe7QjiKd6NHAaXAUOkY=",
+    "./_framework/dotnet.g5ivei6a6w.js": "sha256-pKOLrq/NPhd4WWG3JXS1yQgBPva5CJ39biGB1wdL5oU=",
+    "./_framework/dotnet.js": "sha256-pKOLrq/NPhd4WWG3JXS1yQgBPva5CJ39biGB1wdL5oU=",
     "./_framework/dotnet.native.js": "sha256-95bE510j3EADMNW2OKa/DMBhu8N632dl5HGeBfXNEf4=",
     "./_framework/dotnet.native.rjbmzc4jpg.js": "sha256-95bE510j3EADMNW2OKa/DMBhu8N632dl5HGeBfXNEf4=",
     "./_framework/dotnet.runtime.js": "sha256-YyudibIWETMKrLb+nAZdJ+xDY7HY6BWf6s32UAdcvCU=",
