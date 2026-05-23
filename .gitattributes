@@ -1,0 +1,3 @@
+# Wymagane przy deployu na GitHub Pages (repo publiczne).
+# Bez tego Git może zmieniać końce linii w .js/.wasm i psuć integrity (SRI).
+* binary
